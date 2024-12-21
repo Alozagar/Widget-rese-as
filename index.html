@@ -15,14 +15,20 @@
             height: 100vh;
             background-color: #ffffff; /* Cambia el color de fondo si es necesario */
         }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
+        #widget-container {
+            width: 95vw; /* Ajusta al 95% del ancho de la pantalla */
+            height: 95vh; /* Ajusta al 95% del alto de la pantalla */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transform: scale(1.5); /* Ajusta este valor para agrandar el contenido */
         }
     </style>
 </head>
 <body>
-    <script defer async src='https://cdn.trustindex.io/loader.js?31f2d5038fe3949f5a36a1a5e9c'></script>
+    <div id="widget-container">
+        <script defer async src='https://cdn.trustindex.io/loader.js?31f2d5038fe3949f5a36a1a5e9c'></script>
+    </div>
 </body>
 </html>
